@@ -73,7 +73,7 @@ pipeline {
         }
         
         
-         stage('Terraform apply') {
+        stage('Terraform apply') {
             steps {
                 echo 'Terraform apply...'                           
                 sh 'sudo terraform apply --auto-approve'
@@ -81,7 +81,7 @@ pipeline {
             }
         }
 
-                stage('Manual approval') {
+        stage('Manual approval') {
             steps {
                 
                 input 'Approval required for deployment'
