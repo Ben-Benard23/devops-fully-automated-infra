@@ -26,7 +26,7 @@ rm -rf node_exporter-1.0.1.linux-amd64.tar.gz node_exporter-1.0.1.linux-amd64
 
 # setup the node-exporter dependencies
 sudo yum install git -y
-sudo git clone -b installations https://github.com/cvamsikrishna11/devops-fully-automated.git /tmp/devops-fully-automated
+sudo git clone -b installations https://github.com/Ben-Benard23/devops-fully-automated.git /tmp/devops-fully-automated
 sudo cp /tmp/devops-fully-automated/prometheus-setup-dependencies/node-exporter.service /etc/systemd/system/node-exporter.service
 
 sudo systemctl daemon-reload
@@ -42,7 +42,7 @@ sudo yum install git -y
 
 
 # Clone the repository
-git clone https://github.com/cvamsikrishna11/ecommerce-web-app.git
+git clone https://github.com/Ben-Benard23/ecommerce-web-app.git
 
 # Copy the files inside the cloned folder to the desired location
 sudo cp -r ecommerce-web-app/server1/* /var/www/html/
